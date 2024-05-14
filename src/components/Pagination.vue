@@ -5,3 +5,25 @@
     </div>
   </template>
   
+  <script setup>
+  import { defineProps, defineEmits } from "vue";
+  
+  const props = defineProps({
+    page: Number,
+    totalPages: Number
+  });
+  
+  const emit = defineEmits(["nextPage", "prevPage"]);
+  
+  const nextPage = () => {
+    if (props.page < props.totalPages) {
+      emit("nextPage");
+    }
+  };
+  
+  const prevPage = () => {
+    if (props.page > 1) {
+      emit("prevPage");
+    }
+  };
+  </script>
