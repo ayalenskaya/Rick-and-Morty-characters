@@ -27,3 +27,12 @@
     }
   };
   </script>
+  
+  <style scoped>
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  </style>
+  
