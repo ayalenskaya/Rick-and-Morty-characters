@@ -59,3 +59,17 @@ const applyFilters = (appliedFilter) => {
 onMounted(fetchCharacters);
 </script>
 
+<style scoped>
+.character-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+.character-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 20px;
+}
+</style>
