@@ -11,3 +11,9 @@
     </div>
   </template>
   
+  <script setup>
+  const props = defineProps({
+    character: Object
+  });
+  </script>
+  
