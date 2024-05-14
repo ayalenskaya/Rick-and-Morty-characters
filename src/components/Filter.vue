@@ -25,3 +25,12 @@ const applyFilters = () => {
   emit("applyFilters", filter);
 };
 </script>
+
+<style scoped>
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+</style>
